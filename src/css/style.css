@@ -1,0 +1,525 @@
+@font-face {
+   font-family: "Outfit";
+   font-style: normal;
+   font-weight: 300;
+   src: local("Outfit"),
+        url("../fonts/Outfit-Light.woff2") format("woff2"),
+        url("../fonts/Outfit-Light.woff") format("woff");
+   font-display: swap;
+}
+@font-face {
+   font-family: "Outfit";
+   font-style: normal;
+   font-weight: 400;
+   src: local("Outfit"),
+        url("../fonts/Outfit-Regular.woff2") format("woff2"),
+        url("../fonts/Outfit-Regular.woff") format("woff");
+   font-display: swap;
+}
+@font-face {
+   font-family: "Outfit";
+   font-style: normal;
+   font-weight: 500;
+   src: local("Outfit"),
+        url("../fonts/Outfit-Medium.woff2") format("woff2"),
+        url("../fonts/Outfit-Medium.woff") format("woff");
+   font-display: swap;
+}
+@font-face {
+   font-family: "Outfit";
+   font-style: normal;
+   font-weight: 600;
+   src: local("Outfit"),
+        url("../fonts/Outfit-SemiBold.woff2") format("woff2"),
+        url("../fonts/Outfit-SemiBold.woff") format("woff");
+   font-display: swap;
+}
+@font-face {
+   font-family: "Outfit";
+   font-style: normal;
+   font-weight: 700;
+   src: local("Outfit"),
+        url("../fonts/Outfit-Bold.woff2") format("woff2"),
+        url("../fonts/Outfit-Bold.woff") format("woff");
+   font-display: swap;
+}
+
+
+
+body{
+   background-color: #181818;
+   color: #FFFFFF; 
+   font-family: "Outfit", sans-serif;  
+}
+button{
+   font-family: "Outfit", sans-serif; 
+}
+.hidden{
+   display: none;
+}
+
+
+
+.header__navigation{
+   background-color: #FFAA4C;
+}
+.navigation__item-active{
+   background-color: #181818; 
+}
+.navigation__item a{
+   font-weight: 400;
+   font-size: 16px;
+   color: #000000;
+}
+.navigation__item-active a{
+   font-weight: 500;
+   color: #FFFFFF;
+}
+.header__menu{
+   background-image: url(../img/menu.svg); 
+   width: 40px;
+   height: 40px;
+   background-color: rgba(256,256,256,0);
+}
+.logo__text{
+   font-weight: 600;
+   font-size: 29.6px;
+}
+
+
+
+.contact__button{
+   font-weight: 600;
+   font-size: 20px;
+   border-radius: 10px;
+   background-color: #954CED;
+   color: #FFFFFF;
+   padding: 16px 110px;
+}
+
+
+
+.hero__heading{
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 106%;
+}
+.hero__text{
+   font-weight: 400;
+   font-size: 16px;
+}
+
+
+
+.about__heading{
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 106%;
+}
+.about__text{
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 120%;
+}
+.purple__area{
+   border-radius: 20px;
+   padding: 5px;
+   background: linear-gradient(178deg, transparent 20%,#A64CED 24% 80%, transparent 85%);
+}
+.about__subtitle{
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 106%;
+}
+.about__description{
+   font-weight: 400;
+   font-size: 16px;
+}
+
+
+
+.statistics{
+   background-color: #954CED;
+}
+.statistics__text{
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 106%;
+}
+.statistics__heading{
+   font-weight: 600;
+   font-size: 20px;
+}
+
+
+
+.benefit__heading{
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 106%;
+}
+.benefit__text{
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 120%;
+}
+.benefit__item{
+   color: #000;
+   background-color: #F5F5F5;
+   background-position: right bottom;
+   border-radius: 20px;
+   padding: 20px;
+   margin-bottom: 20px;
+}
+.benefit__item-phone{
+   background-image: url(../img/ben_itm_1.svg);
+   height: 362px;
+   background-position: left bottom;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+.benefit__item-bags{
+   background-image: url(../img/ben_itm_2.svg);
+   height: 333px;
+   background-position: bottom;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+.benefit__item-like{
+   background-image: url(../img/ben_itm_3.svg);
+   height: 313px;  
+   background-repeat: no-repeat;
+   background-position: right bottom;
+}
+.benefit__item-person{
+   background-image: url(../img/ben_itm_4.svg);
+   height: 395px;
+   background-position: 75% bottom;
+   background-repeat: no-repeat;
+}
+.benefit__subtitle{
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 106%;
+}
+.benefit__description{
+   font-weight: 400;
+   font-size: 16px;
+}
+
+
+
+.contact{
+   background-color: #F5F5F5;
+   color: #000;
+}
+.contact__border{
+   border: 3px solid #CFCFCF;
+   border-radius: 20px;
+}
+.contact__heading{
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 106%;
+}
+.contact__button-small{
+   padding: 16px 90px;
+}
+
+
+
+.media{
+   background-color: #F5F5F5;
+   color: #000;
+}
+.media__heading{
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 106%;
+}
+.media__text{
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 120%;
+}
+.media__item{
+   position: relative;
+   width: 64px;
+   height: 64px;
+   background-color: #954CED;
+   border-radius: 50%;
+}
+.media__image{
+   position: absolute; 
+   top: 25%;
+   left: 25%;
+}
+
+
+
+.programms{
+   background-color: #F5F5F5;
+}
+
+
+
+.mobile__item a{
+   font-weight: 500;
+   font-size: 20px;
+   color: #FFF;
+}
+.contact__button-footer{
+   padding: 16px 30px;
+}
+.download__text{
+   font-weight: 500;
+   font-size: 14px;
+}
+.download__name{
+   font-size: 30px;
+   color: #FFF;
+}
+.info__copyright{
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 150%;
+   color: #B9B9B9;
+}
+
+
+
+.popup{
+   background-color: #fff;
+   border-radius: 15px;
+}
+.button__close{
+   color: #B9B9B9;
+   background-color: rgba(256,256,256,0);
+}
+
+
+
+.cookies__text{
+   font-weight: 300;
+   font-size: 20px;
+   line-height: 140%;
+   color:#383838;
+}
+.button__accept{
+   font-weight: 600;
+   font-size: 20px;
+   border-radius: 10px;
+   color: #fff;
+   background-color: #954CED;
+   padding: 16px 115px;
+}
+.button__decline{
+   font-weight: 600;
+   font-size: 20px;
+   border-radius: 10px;
+   color: #000;
+   background-color: #fff;
+   border: 2px solid #954CED;
+   padding: 16px 110px;
+}
+
+
+
+.form__field{
+   font-weight: 500;
+   font-size: 14px;
+   color: #070707;
+}
+.form ::placeholder{
+   font-weight: 400;
+   font-size: 14px;
+   color: #A7A7A7;
+}
+.form__text{
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 140%;
+   color: #000;
+}
+.form__link{
+   color: #954CED;
+}
+.contact__button-gray{
+   padding: 16px 90px;
+   background-color: #B9B9B9;
+}
+
+
+
+.gratitude__title{
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 120%;
+   color: #A64CED;
+}
+.gratitude__text{
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 120%;
+   color: #444444;
+}
+.button__super{
+   font-weight: 600;
+   font-size: 20px;
+   border-radius: 10px;
+   color: #fff;
+   background-color: #954CED;
+   padding: 16px 98px;
+}
+
+
+
+.button__close-menu{
+   color: #fff;
+   font-size: 24px;
+}
+
+
+
+@media (min-width: 768px) {
+   .navigation__item a{
+      font-weight: 500;
+   }
+   .logo__icon{
+      width: 25px;
+      height: 29px;
+   }
+   .logo__text{
+      font-size: 37px;
+   }
+   .contact__button{
+      padding: 16px 30px;
+   }
+   .hero__heading{
+      font-size: 96px;
+   }
+   .hero__text{
+      font-size: 20px;
+      line-height: 120%;
+   }
+   .hero__image{
+      width: 595px;
+      height: 529px;
+   }
+   .about{
+      background-image: url(../img/about_background.svg);
+      background-repeat: no-repeat;
+      background-position: left bottom;
+   }
+   .about__heading{
+      font-size: 96px;
+   }
+   .about__text{
+      font-size: 36px;
+      line-height: normal;
+   }
+   .about__subtitle{
+      font-size: 48px;
+   }
+   .about__description{
+      font-size: 24px;
+      line-height: 120%;
+   }
+   .work__image{
+      width: 308px;
+      height: 623px;
+   }
+   .statistics__text{
+      font-size: 64px;
+   }
+   .statistics__heading{
+      font-size: 24px;
+      line-height: 120%;
+   }
+   .benefit__heading{
+      font-size: 64px;
+   }
+   .benefit__text{
+      font-size: 36px;
+      line-height: normal;
+   } 
+   .benefit__subtitle{
+      font-weight: 600;
+      font-size: 48px;
+      line-height: normal;
+   }
+   .benefit__description{
+      font-size: 20px;
+      line-height: 120%;
+   }
+   .contact__heading{
+      font-size: 64px;
+   }
+   .media__heading{
+      font-size: 96px;
+   }
+   .media__item{
+      width: 90px;
+      height: 90px;
+   }
+   .media__image{
+      width: 50%;
+      height: 50%;
+   }
+   .media__image-facebook{
+      height: 80%;
+   }
+   .programms__image-woo {
+      width: 126px;
+      height: 60px;
+   }
+   .programms__image-shopify {
+      width: 209px;
+      height: 60px;
+   }
+   .programms__image-square {
+      width: 182px;
+      height: 48px;
+   }
+   .programms__image-squarespace {
+      width: 277px;
+      height: 40px;
+   }
+   .programms__image-clover {
+      width: 184px;
+      height: 46px;
+   }
+   .navigation__item-footer a{
+      color: #fff;
+   }
+   .info__copyright{
+      line-height: 140%;  
+   }
+   .info__item a{
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 140%;
+      color: #B9B9B9;
+      text-decoration: underline;
+   }
+   .button__accept{
+      padding: 16px 30px;
+   }
+   .button__decline{
+      padding: 14px 28px;
+   }
+   .gratitude__image{
+      width: 248px;
+      height: 205px;
+   }
+   .gratitude__title{
+      font-size: 36px;
+      line-height: normal;
+   }
+   .gratitude__text{
+      font-size: 24px;
+   }
+   .button__super{
+      padding: 16px 139px;
+   }
+}
